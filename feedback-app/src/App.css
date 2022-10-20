@@ -1,0 +1,24 @@
+.App {
+  text-align: center;
+}
+
+.container {
+  background-color: #282c34;
+  height: 100vh;
+  padding-top: 30px;
+}
+
+.card {
+  border-radius: 6px;
+  border: 1px lightblue solid;
+  margin: 20px 10px;
+  margin-top: 0;
+  padding: 5px;
+  box-shadow: #282c34 4px;
+  background-color: aliceblue;
+}
+
+.card.reverse {
+  background-color: plum;
+  color: white;
+}
