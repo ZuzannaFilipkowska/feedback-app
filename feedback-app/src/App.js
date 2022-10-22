@@ -3,15 +3,23 @@ import Header from "./components/Header";
 import FeedbackData from "./data/FeedbackData";
 import { useState } from "react";
 import FeedbackList from "./components/FeedbackList";
+import FeedbackStats from "./components/FeedbackStats";
 
 function App() {
+  const [feedback, setFeedback] = useState(FeedbackData);
 
-  const [feedback, setFeedback] = useState(FeedbackData)
+  const handleDelete = (id) => {
+    setFeedback(feedback.filter((el) => el.id !== id));
+  };
   return (
     <>
       <Header />
       <div className="container">
-        <FeedbackList feedback={feedback}></FeedbackList>
+        <FeedbackStats feedback={feedback}></FeedbackStats>
+        <FeedbackList
+          feedback={feedback}
+          handleDelete={handleDelete}
+        ></FeedbackList>
       </div>
     </>
   );

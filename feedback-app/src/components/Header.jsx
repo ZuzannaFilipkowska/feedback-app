@@ -1,7 +1,7 @@
 function Header() {
   const headerStyles = {
-    backgroundColor: "rgb(97, 218, 251)",
-    color: "white",
+    backgroundColor: "#292f32",
+    color: "#cf37b9",
     margin: 0,
   };
   return (

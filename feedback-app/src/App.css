@@ -3,22 +3,61 @@
 }
 
 .container {
-  background-color: #282c34;
+  background-color: #494949;
   height: 100vh;
   padding-top: 30px;
 }
 
 .card {
+  position: relative;
   border-radius: 6px;
   border: 1px lightblue solid;
   margin: 20px 10px;
   margin-top: 0;
-  padding: 5px;
+  padding: 15px;
   box-shadow: #282c34 4px;
-  background-color: aliceblue;
+  background-color: rgb(252, 252, 252);
+  display: flex;
+  flex-direction: column;
 }
 
-.card.reverse {
-  background-color: plum;
-  color: white;
+.feedback-stats {
+  display: flex;
+  padding: 0 20px;
+  color: #fff;
+}
+
+.feedback-stats span {
+  flex: 1 1 auto;
+}
+
+.num-display {
+  font-weight: 700;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: #cf80c3;
+  z-index: 10;
+  transform: translateY(-25px) translateX(-20px);
+}
+
+button.close {
+  border-radius: 6px;
+  border: none;
+  background-color: palevioletred;
+  align-items: center;
+  display: flex;
+}
+
+.item-header {
+  display: flex;
+  margin-top: -40px;
+}
+
+.item-header span {
+  flex: 1 1 auto;
 }
